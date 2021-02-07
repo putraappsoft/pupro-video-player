@@ -2,35 +2,30 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>JENNIE - "SOLO" PERFORMANCE</title>
-  <link rel='stylesheet' href='https://cdn.plyr.io/3.4.6/plyr.css'><link rel="stylesheet" href="./style.css">
+  <title>CodePen - fluidPlayer v2</title>
+  
 
 </head>
 <body>
-<div class="container">
-<video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
-                <!-- Video files -->
-                <source src="https://firebasestorage.googleapis.com/v0/b/bpshow-d6ea4.appspot.com/o/JENNIE.mp4?alt=media&token=3d20ff40-1729-4861-b0fe-58babde51989" type="video/mp4" size="576">
-                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
-                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
-                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4" size="1440">
+<!-- partial:index.partial.html -->
+<html>
+	<head>
+		<title>Fluid Player</title>
+		<link rel="stylesheet" href="http://cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css"/>
+		<script src="http://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
+	</head>
+	<body>
 
-                <!-- Caption files -->
-                <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
-                    default>
-                <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+		<video id='my-video' controls style="width: 640px; height: 360px;">
+			<source data-fluid-hd src='https://cdn.fluidplayer.com/videos/valerian-1080p.mkv' title='1080p' type='video/mp4' />
+			<source data-fluid-hd src='https://cdn.fluidplayer.com/videos/valerian-720p.mkv' title='720p' type='video/mp4' />
+			<source src='https://cdn.fluidplayer.com/videos/valerian-480p.mkv' title='480p' type='video/mp4' />         
+		</video>
 
-                <!-- Fallback for browsers that don't support the <video> element -->
-                <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
-            </video>
-  
-  <div class="actions">
-    <button type="button" class="btn js-play">Play</button>
-    <button type="button" class="btn js-pause">Pause</button>
-    <button type="button" class="btn js-stop">Stop</button>
-    <button type="button" class="btn js-rewind">Rewind</button>
-    <button type="button" class="btn js-forward">Forward</button>
-  </div>
-    <script src='https://cdn.plyr.io/3.4.6/plyr.js'></script><script  src="./script.js"></script>
+	</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>
