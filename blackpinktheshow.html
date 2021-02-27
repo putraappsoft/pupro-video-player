@@ -16,7 +16,7 @@
   <script src="/videojs/video.min.js"></script>
   <style media="screen">
   .vjs-watermark-text {
-    font-size: 20px !important;
+    font-size: 15px !important;
   }
   </style>
   <script>
@@ -24,7 +24,8 @@
   </script>
   
 </head>
-<body class="drive-viewer-fixed-frame">
+<body>
+	<div class="video-js-responsive-container vjs-hd">
     
       
         <video id="topddl_player" class="video-js vjs-default-skin" controls preload="none" poster="https://github.com/putraappsoft/video-asset/raw/main/blackpink/video/Screenshot_20210226-090937.png">
@@ -73,6 +74,24 @@
         </script>
       
     
-
+<style type="text/css">
+  .video-js-responsive-container.vjs-hd {
+    padding-top: 56.25%;
+}
+.video-js-responsive-container.vjs-sd {
+    padding-top: 75%;
+}
+.video-js-responsive-container {
+    width: 100%;
+    position: relative;
+}
+.video-js-responsive-container .video-js {
+    height: 100% !important; 
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  </style>
 </body>
 </html>
