@@ -1,1 +1,97 @@
-P
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ROSE - "GONE" M/V</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <script src="/cdn-cgi/apps/head/Ndpx54TlGhYkCfM4hbPL-Af33BI.js"></script><link href="/plugins/videojs-logo.min.css" rel="stylesheet">
+  <link href="/plugins/videojs-resolution-switcher.css" rel="stylesheet">
+  <link href="/videojs/video-js.min.css" rel="stylesheet" type="text/css">
+  <link href="/plugins/videojs.ads.css" rel="stylesheet" type="text/css">
+  <link href="/plugins/videojs.ima.css" rel="stylesheet" type="text/css">
+  <link href="/skin/videojs-skin-flat.min.css" rel="stylesheet" type="text/css">
+
+  <script src="/videojs/ie8/videojs-ie8.min.js"></script>
+  <script src="/videojs/video.min.js"></script>
+  <style media="screen">
+  .vjs-watermark-text {
+    font-size: 15px !important;
+  }
+  </style>
+  <script>
+    videojs.options.flash.swf = "/videojs/video-js.swf";
+  </script>
+  
+</head>
+
+<body>
+	<div class="video-js-responsive-container vjs-hd">
+    
+      
+        <video id="topddl_player" class="video-js vjs-default-skin" controls preload="none" poster="https://github.com/putraappsoft/video-asset/raw/main/blackpink/Capture%202021-02-03%2014.04.05.jpg">
+          
+            <source src="https://putraappsoft.netlify.app/blackpink/ROSE%20-%20%22GONE%22%20MV.mp4" type='video/mp4' label='360' res='360' />
+          
+          <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+        </video>
+        <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+        <script src="/plugins/videojs-resolution-switcher.js"></script>
+        <script src="/plugins/videojs-logo.min.js"></script>
+        <script src="/plugins/videojs-hotkeys.js"></script>
+        <script src="/plugins/videojs.ads.min.js"></script>
+        <script src="/plugins/videojs.ima.min.js"></script>
+        <script>
+        var body = document.body,  html = document.documentElement;
+        var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+        var setup = {width: document.body.clientWidth, height};
+         setup.autoplay = false; 
+        videojs('topddl_player', setup )
+        
+        videojs('topddl_player').videoLogo({
+          watermark: "Putra Production",
+        })
+        
+        
+        videojs('topddl_player').videoJsResolutionSwitcher();
+        videojs('topddl_player').hotkeys({
+          volumeStep: 0.1,
+          seekStep: 5,
+          enableModifiersForNumbers: false,
+          alwaysCaptureHotkeys: true
+        });
+        videojs('topddl_player').on('error', function(err) {
+          var current_time = videojs('topddl_player').currentTime();
+          
+          window.location = window.location.href.replace(/\&autoplay\=true\&time\=\d+\&retry\=\d+/g, '') + '&autoplay=true&time=' + current_time + '&retry=1';
+          // console.log(err);
+        })
+        
+          videojs('topddl_player').ima({
+            id: 'topddl_player',
+            adTagUrl: ' '
+          });
+        
+        </script>
+      
+  <style type="text/css">
+  .video-js-responsive-container.vjs-hd {
+    padding-top: 56.25%;
+}
+.video-js-responsive-container.vjs-sd {
+    padding-top: 75%;
+}
+.video-js-responsive-container {
+    width: 100%;
+    position: relative;
+}
+.video-js-responsive-container .video-js {
+    height: 100% !important; 
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  </style>
+</body>
+</html>
