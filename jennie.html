@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BLACKPINK :THE SHOW</title>
+  <title>JENNIE - "SOLO" PERFORMANCE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -16,7 +16,7 @@
   <script src="/videojs/video.min.js"></script>
   <style media="screen">
   .vjs-watermark-text {
-    font-size: 20px !important;
+    font-size: 15px !important;
   }
   </style>
   <script>
@@ -24,12 +24,14 @@
   </script>
   
 </head>
-<body class="drive-viewer-fixed-frame">
+
+<body>
+	<div class="video-js-responsive-container vjs-hd">
     
       
-        <video id="topddl_player" class="video-js vjs-default-skin" controls preload="none" poster="https://github.com/putraappsoft/video-asset/raw/main/blackpink/video/Screenshot_20210226-090937.png">
+        <video id="topddl_player" class="video-js vjs-default-skin" controls preload="none" poster="https://github.com/putraappsoft/video-asset/raw/main/blackpink/video/Screenshot_20210225-210638.png">
           
-            <source src="https://ipfs.io/ipfs/QmV8ZLqQuN9UH7AJvjh1JM6kBKAVvrqVQ5Cbangv3BSUAt" type='video/mp4' label='360' res='360' />
+            <source src="https://firebasestorage.googleapis.com/v0/b/bpshow-d6ea4.appspot.com/o/JENNIE.mp4?alt=media&token=3d20ff40-1729-4861-b0fe-58babde51989" type='video/mp4' label='360' res='360' />
           
           <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
         </video>
@@ -43,11 +45,11 @@
         var body = document.body,  html = document.documentElement;
         var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
         var setup = {width: document.body.clientWidth, height};
-         setup.autoplay = true; 
+         setup.autoplay = false; 
         videojs('topddl_player', setup )
         
         videojs('topddl_player').videoLogo({
-          watermark: "PutraProductID",
+          watermark: "Putra Production",
         })
         
         
@@ -72,7 +74,24 @@
         
         </script>
       
-    
-
+  <style type="text/css">
+  .video-js-responsive-container.vjs-hd {
+    padding-top: 56.25%;
+}
+.video-js-responsive-container.vjs-sd {
+    padding-top: 75%;
+}
+.video-js-responsive-container {
+    width: 100%;
+    position: relative;
+}
+.video-js-responsive-container .video-js {
+    height: 100% !important; 
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  </style>
 </body>
 </html>
