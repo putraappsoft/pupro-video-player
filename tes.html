@@ -42,7 +42,8 @@
         <script src="/plugins/videojs.ads.min.js"></script>
         <script src="/plugins/videojs.ima.min.js"></script>
         <script>
-        var body = document.body,  html = document.documentElement;
+        var my_video_id = videojs('video_1');
+var body = document.body,  html = document.documentElement;
         var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
         var setup = {width: document.body.clientWidth, height};
          setup.autoplay = false; 
@@ -71,7 +72,14 @@
             id: 'topddl_player',
             adTagUrl: ' '
           });
-        
+    
+    my_video_id.watermark({
+  file: 'https://github.com/putraappsoft/videojs-logobrand/raw/master/20210102_130624.png',
+  xpos: 0,
+  ypos: 0,
+  xrepeat: 0,
+  opacity: 0.5
+  });
         </script>
       
   <style type="text/css">
